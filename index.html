@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Not-Null Smart Resource Router — AI-powered crisis triage system guiding vulnerable individuals to real-time verified emergency resources in 6th of October City, Egypt." />
+  <meta name="keywords" content="crisis router, housing stability, emergency shelter, food security, Egypt, October City, AI, resource routing" />
+  <title>Not-Null Crisis Router — 6th of October City</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="top">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="nav-logo-dot"></span>
+        Not-Null Router
+      </div>
+      <ul class="nav-links">
+        <li><a href="#vectors">Vectors</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#architecture">Architecture</a></li>
+        <li><a href="#database">Database</a></li>
+        <li><a href="#demo">Scenarios</a></li>
+      </ul>
+      <a href="http://localhost:8501" target="_blank" class="nav-cta btn">Open Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        USAII Hackathon — Challenge 4 · Housing Stability
+      </div>
+      <h1>
+        Smart Crisis<br />
+        Routing for<br />
+        <em>Real People</em>
+      </h1>
+      <p class="hero-desc">
+        An AI-powered emergency triage engine connecting vulnerable individuals
+        facing sudden displacement or distress to verified, real-time local
+        resources across 6th of October City — via a universally accessible
+        conversational interface.
+      </p>
+      <div class="hero-actions">
+        <a href="http://localhost:8501" target="_blank" class="btn btn-primary">
+          Open Live Dashboard &rarr;
+        </a>
+        <a href="#how" class="btn btn-secondary">
+          See How It Works
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="mockup-card">
+        <div class="mockup-header">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <span class="mockup-title">Not-Null Crisis Router — WhatsApp Simulator</span>
+        </div>
+        <div class="mockup-body">
+          <div class="chat-bubble bubble-bot">
+            <div class="bubble-label">AI Crisis Router</div>
+            Welcome to the Not-Null Emergency Router (October City Sector).
+            Please reply with the number of what you need most right now:
+            <br /><br />
+            1. Immediate Shelter &amp; Housing Stability<br />
+            2. Food Security &amp; Nutritional Support<br />
+            3. Safety Threats &amp; Immediate Abuse<br />
+            4. Emergency Rental &amp; Financial Assistance
+          </div>
+
+          <div class="chat-bubble bubble-user">
+            <div class="bubble-label">User</div>
+            أنا في الحي المتميز ومحتاجة مأوى بسرعة. I need shelter in Al-Motamayez.
+          </div>
+
+          <div class="chat-bubble bubble-bot">
+            <div class="bubble-label">AI Crisis Router</div>
+            <span class="verified-chip">
+              <span class="verified-dot"></span> LIVE VERIFIED
+            </span>
+            <br /><br />
+            We have routed you to:<br />
+            <strong>Al-Motamayez Emergency Shelter</strong><br />
+            Address: Block 4, Al-Motamayez Area, 6th of October<br />
+            Phone: +20 (2) 3835-1010<br />
+            Beds Available: <strong>12</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS BAR ===================== -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Crisis Vectors</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">7</div>
+        <div class="stat-label">Verified Shelters</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Food Distribution Centers</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Safe Houses &amp; Dispatch Lines</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">6h</div>
+        <div class="stat-label">Stale-Data Threshold</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">October City Localized</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== VECTORS ===================== -->
+  <section class="section" id="vectors">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Triage Engine</div>
+        <h2>Four Crisis Vectors,<br />One Unified Router</h2>
+        <p>
+          Each vector activates a dedicated database query path, telemetry
+          pipeline, and operator backchannel — no generalised chatbot noise.
+        </p>
+      </div>
+
+      <div class="vectors-grid">
+        <!-- Shelter -->
+        <div class="vector-card vector-shelter">
+          <span class="vector-icon">🛖</span>
+          <h3>Immediate Shelter &amp; Housing</h3>
+          <p>
+            Routes users to verified emergency beds across Al-Motamayez, 11th District,
+            and Hadayek October. Telemetry enforces a 6-hour stale-data window with
+            automated supervisor pings when thresholds are breached.
+          </p>
+          <span class="tag vector-tag-shelter">3 Active Shelters · 25 Beds</span>
+        </div>
+
+        <!-- Food -->
+        <div class="vector-card vector-food">
+          <span class="vector-icon">🥗</span>
+          <h3>Food Security &amp; Nutrition</h3>
+          <p>
+            Connects users to soup kitchens and food banks in the 3rd District,
+            Industrial Zone, and Sheikh Zayed. A daily 8:00 AM inventory reset
+            check flags stale stock before routing.
+          </p>
+          <span class="tag vector-tag-food">3 Food Banks · 205 Daily Meals</span>
+        </div>
+
+        <!-- Safety -->
+        <div class="vector-card vector-safety">
+          <span class="vector-icon">🚦</span>
+          <h3>Safety Threats &amp; Abuse Bypass</h3>
+          <p>
+            Instantly locks out all AI inference and serves human caseworker hotlines.
+            Keyword detection across Arabic and English triggers the bypass before
+            any NLP processing runs.
+          </p>
+          <span class="tag vector-tag-safety">AI Lockout · Direct Dispatch</span>
+        </div>
+
+        <!-- Financial -->
+        <div class="vector-card vector-financial">
+          <span class="vector-icon">⚖️</span>
+          <h3>Emergency Financial Assistance</h3>
+          <p>
+            Surfaces eviction relief grant pools and pro-bono legal counsel slots
+            across 7th and 12th Districts. Backlog delay warnings are surfaced
+            to the client when processing pipelines are overloaded.
+          </p>
+          <span class="tag vector-tag-financial">$17,000 Grant Pool · 5 Legal Slots</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section class="how-bg" id="how">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" style="color: var(--ochre);">System Flow</div>
+        <h2 style="color: var(--cream-light);">From Distress Signal<br />to Verified Resource</h2>
+        <p style="color: rgba(250,246,240,0.65);">
+          A four-stage pipeline processes every incoming message — from acoustic
+          analysis to SQLite retrieval — in under two seconds.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h4>ASR Intake</h4>
+          <p>
+            Voice or text input is transcribed by a simulated Whisper ASR module with
+            emotional distress flags extracted alongside the transcript.
+          </p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h4>Safety Bypass</h4>
+          <p>
+            A keyword scanner checks for abuse and violence signals in Arabic &amp; English.
+            If triggered, all AI inference is halted and caseworker cards are served immediately.
+          </p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h4>Geo-Entity Extraction</h4>
+          <p>
+            A bilingual location parser maps colloquial district references like
+            "المتميز" or "hadayek" to standardised October City neighbourhood categories.
+          </p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h4>SQLite RAG Routing</h4>
+          <p>
+            A targeted SQL query retrieves the best-matching, live-verified resource.
+            If none exist, a human hotline fallback is issued — no hallucination possible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ARCHITECTURE ===================== -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Technical Blueprint</div>
+        <h2>Multi-Layer Architecture</h2>
+        <p>
+          Three decoupled layers handle ingestion, intelligence, and data persistence
+          independently — enabling each to be upgraded or replaced in isolation.
+        </p>
+      </div>
+
+      <div class="arch-grid">
+        <div class="arch-card">
+          <div class="arch-layer">Layer A — Client Interface</div>
+          <h3>WhatsApp Simulator</h3>
+          <ul>
+            <li>Streamlit-rendered chat timeline</li>
+            <li>Bilingual (AR / EN) text input</li>
+            <li>Simulated Whisper ASR voice notes</li>
+            <li>Intake triage state machine</li>
+            <li>Dynamic retro vector theme switching</li>
+            <li>Quick-reply intake buttons (1–4)</li>
+          </ul>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-layer">Layer B — NLP Pipeline</div>
+          <h3>Intent &amp; Entity Engine</h3>
+          <ul>
+            <li>Bilingual safety keyword scanner</li>
+            <li>Geospatial entity extractor (16 mappings)</li>
+            <li>Intent classifier (Shelter / Food / Safety / Financial)</li>
+            <li>Severity scoring (0–10)</li>
+            <li>Optional Gemini API live routing mode</li>
+            <li>Hallucination containment via sandbox prompts</li>
+          </ul>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-layer">Layer C — Data &amp; Operator</div>
+          <h3>SQLite Live Database</h3>
+          <ul>
+            <li>Four relational tables (shelters, food_banks, safety_registry, financial_assistance)</li>
+            <li>6-hour stale-data telemetry pings</li>
+            <li>8:00 AM daily food inventory resets</li>
+            <li>Operator bed / meal / fund adjustment controls</li>
+            <li>Caseworker dispatch webhook simulation</li>
+            <li>Real-time system audit log trail</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DATABASE ===================== -->
+  <section class="db-section" id="database">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Live SQLite Registry</div>
+        <h2>October City Resource Database</h2>
+        <p>
+          All resource data is seeded locally at startup and updated in real-time
+          through the operator backchannel. No external API dependency.
+        </p>
+      </div>
+
+      <div class="db-table-wrap">
+        <table class="db-table">
+          <thead>
+            <tr>
+              <th>Facility Name</th>
+              <th>Vector</th>
+              <th>Neighbourhood</th>
+              <th>Capacity</th>
+              <th>Status</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Al-Motamayez Emergency Shelter</strong></td>
+              <td><span class="tag vector-tag-shelter" style="font-size:0.68rem;">Shelter</span></td>
+              <td>Al-Motamayez District</td>
+              <td>12 Beds</td>
+              <td><span class="status-pill pill-live">LIVE VERIFIED</span></td>
+              <td>+20 (2) 3835-1010</td>
+            </tr>
+            <tr>
+              <td><strong>11th District Youth Shelter</strong></td>
+              <td><span class="tag vector-tag-shelter" style="font-size:0.68rem;">Shelter</span></td>
+              <td>11th District</td>
+              <td>5 Beds</td>
+              <td><span class="status-pill pill-live">LIVE VERIFIED</span></td>
+              <td>+20 (2) 3835-1020</td>
+            </tr>
+            <tr>
+              <td><strong>Hadayek October Relief Hub</strong></td>
+              <td><span class="tag vector-tag-shelter" style="font-size:0.68rem;">Shelter</span></td>
+              <td>Hadayek October</td>
+              <td>8 Beds</td>
+              <td><span class="status-pill pill-stale">STALE WARNING</span></td>
+              <td>+20 (2) 3835-1030</td>
+            </tr>
+            <tr>
+              <td><strong>District 3 Soup Kitchen</strong></td>
+              <td><span class="tag vector-tag-food" style="font-size:0.68rem;">Food</span></td>
+              <td>3rd District</td>
+              <td>85 Meals/Day</td>
+              <td><span class="status-pill pill-live">LIVE VERIFIED</span></td>
+              <td>+20 (2) 3835-2010</td>
+            </tr>
+            <tr>
+              <td><strong>Industrial Zone Food Bank</strong></td>
+              <td><span class="tag vector-tag-food" style="font-size:0.68rem;">Food</span></td>
+              <td>Industrial Zone</td>
+              <td>120 Meals/Day</td>
+              <td><span class="status-pill pill-live">LIVE VERIFIED</span></td>
+              <td>+20 (2) 3835-2020</td>
+            </tr>
+            <tr>
+              <td><strong>Sheikh Zayed Welfare Pantry</strong></td>
+              <td><span class="tag vector-tag-food" style="font-size:0.68rem;">Food</span></td>
+              <td>Sheikh Zayed</td>
+              <td>0 Meals/Day</td>
+              <td><span class="status-pill pill-empty">EMPTY FALLBACK</span></td>
+              <td>+20 (2) 3835-2030</td>
+            </tr>
+            <tr>
+              <td><strong>Central Axis Women's Safe House</strong></td>
+              <td><span class="tag vector-tag-safety" style="font-size:0.68rem;">Safety</span></td>
+              <td>Central Axis</td>
+              <td>Anonymous</td>
+              <td><span class="status-pill pill-live">ACTIVE</span></td>
+              <td>+20 (10) 9999-0000</td>
+            </tr>
+            <tr>
+              <td><strong>6th of October Social Dispatch</strong></td>
+              <td><span class="tag vector-tag-safety" style="font-size:0.68rem;">Safety</span></td>
+              <td>Al-Motamayez District</td>
+              <td>Mobile Team</td>
+              <td><span class="status-pill pill-live">ACTIVE</span></td>
+              <td>+20 (10) 8888-0000</td>
+            </tr>
+            <tr>
+              <td><strong>District 7 Legal &amp; Rental Aid Office</strong></td>
+              <td><span class="tag vector-tag-financial" style="font-size:0.68rem;">Financial</span></td>
+              <td>7th District</td>
+              <td>$15,000 Pool · 4 Slots</td>
+              <td><span class="status-pill pill-live">FLUID</span></td>
+              <td>+20 (2) 3835-3010</td>
+            </tr>
+            <tr>
+              <td><strong>District 12 Community Support Fund</strong></td>
+              <td><span class="tag vector-tag-financial" style="font-size:0.68rem;">Financial</span></td>
+              <td>12th District</td>
+              <td>$2,000 Pool · 1 Slot</td>
+              <td><span class="status-pill pill-stale">HEAVY DELAY</span></td>
+              <td>+20 (2) 3835-3020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Responsible AI</div>
+        <h2>Built for Trust &amp; Resilience</h2>
+        <p>
+          Every design decision prioritises accuracy, privacy, and accessibility
+          for users operating under extreme cognitive load.
+        </p>
+      </div>
+
+      <div class="features-strip">
+        <div class="feature-item">
+          <div class="feature-icon-wrap">⚡</div>
+          <div>
+            <h4>Zero Hallucination Policy</h4>
+            <p>The Python layer overrides LLM output if the SQLite query returns zero results — the central hotline is always served instead of a fabricated address.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">🔒</div>
+          <div>
+            <h4>Biometric Privacy</h4>
+            <p>Voice audio is processed in transient buffer memory only. No audio files, biometrics, or user identifiers are ever written to disk or permanent logs.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">📡</div>
+          <div>
+            <h4>Stale-Data Telemetry</h4>
+            <p>Automated supervisor webhook pings are triggered when shelter beds go unverified for 6+ hours or food inventory is not refreshed before 8:00 AM.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">🌍</div>
+          <div>
+            <h4>Bilingual NLP</h4>
+            <p>The geospatial entity parser handles 16 location mappings in both colloquial Arabic and English, covering all major October City districts and sectors.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">🔄</div>
+          <div>
+            <h4>Reversible Interface Engine</h4>
+            <p>Operators can force-switch vectors, override client routing, and reset the entire session state to the intake greeting loop from the sidebar at any time.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">🛡️</div>
+          <div>
+            <h4>Safety Lockout Protocol</h4>
+            <p>Abuse and violence keywords in Arabic and English instantly bypass all AI inference — routing directly to human caseworkers with no LLM intermediate step.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEMO SCENARIOS ===================== -->
+  <section class="demo-strip" id="demo">
+    <div class="demo-inner">
+      <div>
+        <div class="section-label">Live Scenarios</div>
+        <h2>Test Five Pre-Loaded<br />Crisis Scenarios</h2>
+        <p>
+          Each scenario simulates a real bilingual distress message from an October City
+          resident. The ASR transcribes the audio, the NLP extracts the location and intent,
+          and the SQLite router returns a verified result in under 2 seconds.
+        </p>
+        <a href="http://localhost:8501" target="_blank" class="btn btn-primary">
+          Run Scenarios in Dashboard &rarr;
+        </a>
+      </div>
+
+      <div class="demo-scenarios">
+        <div class="scenario-chip">
+          <div class="scenario-badge badge-shelter">S</div>
+          <div>
+            <div style="font-weight:600;">Motamayez Eviction</div>
+            <div class="scenario-desc">Routes to Al-Motamayez Emergency Shelter (12 beds verified)</div>
+          </div>
+        </div>
+        <div class="scenario-chip">
+          <div class="scenario-badge badge-shelter">S</div>
+          <div>
+            <div style="font-weight:600;">Hadayek October Displacement</div>
+            <div class="scenario-desc">Triggers stale-data ping (8h update gap) + supervisor alert</div>
+          </div>
+        </div>
+        <div class="scenario-chip">
+          <div class="scenario-badge badge-food">F</div>
+          <div>
+            <div style="font-weight:600;">District 3 Hunger</div>
+            <div class="scenario-desc">Routes to District 3 Soup Kitchen (85 meals live verified)</div>
+          </div>
+        </div>
+        <div class="scenario-chip">
+          <div class="scenario-badge badge-safety">!</div>
+          <div>
+            <div style="font-weight:600;">Central Axis Abuse (Bypass)</div>
+            <div class="scenario-desc">Safety lockout — AI halted, caseworker dispatch activated</div>
+          </div>
+        </div>
+        <div class="scenario-chip">
+          <div class="scenario-badge badge-financial">$</div>
+          <div>
+            <div style="font-weight:600;">District 7 Eviction Court</div>
+            <div class="scenario-desc">Routes to District 7 Legal Aid Office ($15,000 FLUID)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Not-Null Crisis Router</h3>
+        <p>
+          A resilient, AI-powered smart resource routing engine designed to guide
+          vulnerable individuals in 6th of October City, Egypt, to verified
+          emergency shelter, food, safety, and financial support — instantly.
+        </p>
+        <br />
+        <span class="tag" style="background:rgba(250,246,240,0.08); color: var(--cream-light); border-color: rgba(250,246,240,0.2); font-size:0.7rem;">
+          USAII Hackathon · Challenge 4 · Direction B
+        </span>
+      </div>
+
+      <div class="footer-col">
+        <h4>Crisis Vectors</h4>
+        <ul>
+          <li><a href="#vectors">Shelter &amp; Housing</a></li>
+          <li><a href="#vectors">Food Security</a></li>
+          <li><a href="#vectors">Safety &amp; Abuse Bypass</a></li>
+          <li><a href="#vectors">Financial Assistance</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#architecture">Architecture</a></li>
+          <li><a href="#database">Live Database</a></li>
+          <li><a href="http://localhost:8501" target="_blank">Open Dashboard</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Not-Null Smart Resource Router &mdash; 6th of October City, Egypt</span>
+      <span class="footer-bottom-tag">HACKATHON MVP</span>
+    </div>
+  </footer>
+
+</body>
+</html>
